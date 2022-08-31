@@ -2,7 +2,7 @@
 Neste repositório contém meu TCC que foi apresentado e aprovado com nota 9.6 em fevereiro de 2022. O TCC teve dois objetivos: 
 * Realizar um estudo de caso sobre duas tecnologias atuais de processamento de imagens em nuvem. As duas tecnologias avaliadas foram Google Vision 
 e Amazon Rekognition;
-* De acordo com os resultados dos testes feitos no estudo de caso, utilizar a melhor tecnologia para construir um app mobile interativo para 
+* De acordo com os resultados dos testes feitos no estudo de caso, foi utilizada a melhor tecnologia para construir um app mobile interativo para 
 aprendizado do idioma russo.
 
 Os resultados da análise das tecnologias e monografia completa podem ser encontrados no arquivo BRENDA_MOURA_TCC_FinalOficial.pdf
