@@ -31,5 +31,5 @@ com sua respectiva palavra correspondente no idioma russo. Abaixo é mostrada a 
 ### Visualizar perfil e alterar dados, inclusive a foto de perfil
 ![telas-04](https://user-images.githubusercontent.com/95611970/187584926-9599acca-2621-4f0b-bc9a-4831e609f249.jpg)
 
-### Alterar email e senha, com autenticação inclusa para. Deletar perfil, também com altenticação.
+### Alterar email e senha, com autenticação inclusa. Deletar perfil, também com autenticação.
 ![telas-04](https://user-images.githubusercontent.com/95611970/187585012-18b44822-e6c5-4570-97d1-abf534e60348.jpg)
