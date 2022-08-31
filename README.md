@@ -12,7 +12,9 @@ O aplicativo foi nomeado como Bazhenov. Ele utiliza reconhecimento de imagens em
 objetos reconhecidos são enviados para uma API de tradução de texto e, em seguida, os resultados são apresentados na tela em português juntamente 
 com sua respectiva palavra correspondente no idioma russo. Abaixo é mostrada a tela com a imagem enviada e os resultados identificados. 
 <br /><br />
+<p align="center">
 ![tela-resultado-galeria](https://user-images.githubusercontent.com/95611970/187585478-cd69a2e7-df13-4b45-b092-31b279cd1dc3.jpg)
+</p>
 
 ## Tecnologias utilizadas
 * Linguagem: Java e XML
