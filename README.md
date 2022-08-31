@@ -23,11 +23,9 @@ com sua respectiva palavra correspondente no idioma russo. Abaixo é mostrada a 
 ## Funcionalidades
 
 ### Cadastro
-Para armazenar os dados do usuário foi utilizado o banco de dados Firebase
 ![telas-01](https://user-images.githubusercontent.com/95611970/187583516-24d0257e-4b73-45db-bd7c-23d6915f8963.jpg)
 
 ### Envio de imagens por meio de captura de foto ou por imagem existente na galeria de fotos do celular
-Na tela Inicial!
 ![telas-02](https://user-images.githubusercontent.com/95611970/187584796-14f12a72-7bbc-4263-8fe5-2235f1042b6e.jpg)
 
 ### Visualizar perfil e alterar dados, inclusive a foto de perfil
