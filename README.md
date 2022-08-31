@@ -6,8 +6,9 @@ tecnologias avaliadas foram Google Vision e Amazon Rekognition, sendo o Google V
 ## Visão Geral
 O aplicativo utiliza reconhecimento de imagens em nuvem para identificar objetos em uma foto enviada. Os nomes dos objetos reconhecidos são enviados 
 para uma API de tradução de texto e, em seguida, os resultados são apresentados na tela em português juntamente com sua respectiva palavra correspondente
-no idioma russo. Abaixo é mostrada a tela com a imagem enviada e os resultados identificados.
-![tela-resultado-galeria](https://user-images.githubusercontent.com/95611970/187584132-3f8900ee-5eec-4996-a173-c63ed5dce26e.jpg)
+no idioma russo. Abaixo é mostrada a tela com a imagem enviada e os resultados identificados. <br />
+![tela-resultado-galeria](https://user-images.githubusercontent.com/95611970/187585366-1beeb43f-e142-4027-b0a5-93715ed33bd2.jpg)
+
 
 ## Tecnologias utilizadas
 * Linguagem: Java e XML
