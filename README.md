@@ -1,6 +1,6 @@
 ### TCC_final
 Neste repositório contém meu TCC que foi apresentado e aprovado com nota 9.6 em fevereiro de 2022. O TCC teve como objetivo construir um app mobile 
-interativo para aprendizado do idioma russo e fazer um estudo de caso sobre duas tecnologias atuais de processamento de imagens em nuvem. As duas
+interativo para aprendizado do idioma russo. Também foi feito um estudo de caso sobre duas tecnologias atuais de processamento de imagens em nuvem. As duas
 tecnologias avaliadas foram Google Vision e Amazon Rekognition, sendo o Google Vision utilizado para a construção do app final.
 
 ## Visão Geral
