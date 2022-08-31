@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity"
+    android:background="@drawable/good_night_img3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="#33FFFFFF">
+
+        <TextView
+            android:id="@+id/textView_update_profile_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="Você pode atualizar os dados do seu perfil aqui"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_update_profile_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Nome"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_update_profile_name"
+            app:layout_constraintStart_toStartOf="@+id/editText_update_profile_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView_update_profile_head" />
+
+        <EditText
+            android:id="@+id/editText_update_profile_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:hint="Insira seu nome completo"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_update_profile_dob"
+            app:layout_constraintStart_toStartOf="@+id/textView_update_profile_dob"
+            app:layout_constraintTop_toBottomOf="@+id/textView_update_profile_name" />
+
+        <TextView
+            android:id="@+id/textView_update_profile_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Data de aniversário (dd/mm/yyyy)"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_update_profile_dob"
+            app:layout_constraintStart_toStartOf="@+id/editText_update_profile_dob"
+            app:layout_constraintTop_toBottomOf="@+id/editText_update_profile_name" />
+
+        <EditText
+            android:id="@+id/editText_update_profile_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:focusable="false"
+            android:fontFamily="@font/calibri"
+            android:hint="Selecione a data do seu aniversário"
+            android:inputType="date"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_update_profile_gender"
+            app:layout_constraintStart_toStartOf="@+id/textView_update_profile_gender"
+            app:layout_constraintTop_toBottomOf="@+id/textView_update_profile_dob" />
+
+        <TextView
+            android:id="@+id/textView_update_profile_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Gênero"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/radio_group_update_gender"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_update_gender"
+            app:layout_constraintTop_toBottomOf="@+id/editText_update_profile_dob" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_update_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textView_update_profile_gender"
+            tools:layout_editor_absoluteX="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:text="Mulher"
+                android:textColor="#9affffff"
+                android:textSize="16sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/radio_male"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:text="Homem"
+                android:textColor="#9affffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView_update_profile_mobile"
+                app:layout_constraintStart_toEndOf="@+id/radio_female" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/button_upload_profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:padding="10dp"
+            android:text="Atualizar sua foto de perfil"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#33FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_update_gender" />
+
+        <Button
+            android:id="@+id/button_profile_update_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:padding="10dp"
+            android:text="Atualizar Email"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#33FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_upload_profile_pic" />
+
+        <Button
+            android:id="@+id/button_update_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/calibri"
+            android:padding="16dp"
+            android:text="Atualizar Perfil"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_profile_update_email" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

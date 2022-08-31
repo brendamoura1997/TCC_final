@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img4"
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:background="#33FFFFFF"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageView_show_hide_pwd"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_login_pwd" />
+
+        <TextView
+            android:id="@+id/textView_login_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="Por favor, insira suas credenciais para fazer o login"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Email"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_login_head" />
+
+        <EditText
+            android:id="@+id/editText_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Digite seu Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_login_email" />
+
+        <!-- ++++++++++++ PASSWORD +++++++++++++ -->
+
+        <TextView
+            android:id="@+id/textView_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Senha"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_login_email" />
+
+        <EditText
+            android:id="@+id/editText_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_login_pwd" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#33FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_login_pwd" />
+
+        <Button
+            android:id="@+id/button_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="Esqueceu sua senha?"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#33FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

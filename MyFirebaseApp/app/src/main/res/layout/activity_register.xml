@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img4"
+    android:padding="15dp"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="10dp"
+        android:scrollY="0dp"
+        android:background="#33FFFFFF">
+
+
+        <TextView
+            android:id="@+id/textView_register_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="25dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/gotham"
+            android:text="Por gentileza, insira seus dados para acessar o app"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView_register_full_name"
+            app:layout_constraintStart_toStartOf="@+id/textView_register_full_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ++++++++++ FULL NAME ++++++++++  -->
+
+        <TextView
+            android:id="@+id/textView_register_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="0dp"
+            android:fontFamily="@font/calibri"
+            android:textColor="#9affffff"
+            android:text="Nome Completo*"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_register_full_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_head" />
+
+        <EditText
+            android:id="@+id/editText_register_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Digite seu nome completo"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_register_email"
+            app:layout_constraintStart_toStartOf="@+id/textView_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_full_name" />
+
+
+        <!-- ++++++++++ EMAIL ++++++++++  -->
+        <TextView
+            android:id="@+id/textView_register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:text="Email*"
+            android:fontFamily="@font/calibri"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_register_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_register_full_name" />
+
+        <EditText
+            android:id="@+id/editText_register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_email" />
+
+
+        <!-- ++++++++++ DATE OF BIRTHDAY ++++++++++  -->
+
+
+        <TextView
+            android:id="@+id/textView_register_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:text="Data de Nascimento (dd/mm/yyyy)*"
+            android:fontFamily="@font/calibri"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_register_dob"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_register_email" />
+
+        <EditText
+            android:id="@+id/editText_register_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:focusable="false"
+            android:hint="Selecione a sua data de nascimento (dd/mm/yyyy)"
+            android:inputType="date"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_dob" />
+
+        <TextView
+            android:id="@+id/textView_register_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:text="Gênero*"
+            android:fontFamily="@font/calibri"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_register_dob" />
+
+        <!-- ++++++++++ GENDER ++++++++++  -->
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_register_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_gender">
+
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulher"
+                android:fontFamily="@font/calibri"
+                android:textColor="#9affffff"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_register_gender" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="Homem"
+                android:fontFamily="@font/calibri"
+                android:textColor="#9affffff"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/radio_female"
+                app:layout_constraintTop_toBottomOf="@+id/textView_register_gender" />
+
+
+        </RadioGroup>
+        <!-- ++++++++++ MOBILE ++++++++++  -->
+
+
+        <!-- ++++++++++ PASSWORD ++++++++++  -->
+        <TextView
+            android:id="@+id/textView_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/calibri"
+            android:padding="0dp"
+            android:text="Senha*"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_register_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_register_gender" />
+
+        <EditText
+            android:id="@+id/editText_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_register_confirm_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_password" />
+
+
+        <!-- ++++++++++ CONFIRM PASSWORD ++++++++++  -->
+        <TextView
+            android:id="@+id/textView_register_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:text="Confirme sua Senha*"
+            android:fontFamily="@font/calibri"
+            android:textColor="#9affffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_register_password" />
+
+        <EditText
+            android:id="@+id/editText_register_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputshapewhitebg"
+            android:hint="Confirme sua senha"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_register_confirm_password" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="30dp"
+            android:text="Cadastrar"
+            android:textAllCaps="false"
+            android:textColor="#96ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#33FFFFFF"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_register_confirm_password" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
