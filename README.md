@@ -5,7 +5,7 @@ e Amazon Rekognition;
 * De acordo com os resultados dos testes feitos no estudo de caso, foi utilizada a melhor tecnologia para construir um app mobile interativo para 
 aprendizado do idioma russo.
 
-Os resultados da análise das tecnologias e monografia completa podem ser encontrados no arquivo BRENDA_MOURA_TCC_FinalOficial.pdf
+Os critérios de análise das tecnologias e monografia completa podem ser encontrados no arquivo **BRENDA_MOURA_TCC_FinalOficial.pdf**
 
 ## Visão Geral do aplicativo
 O aplicativo foi nomeado como Bazhenov. Ele utiliza reconhecimento de imagens em nuvem para identificar objetos em uma foto enviada. Os nomes dos 
